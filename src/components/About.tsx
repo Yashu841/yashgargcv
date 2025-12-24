@@ -69,6 +69,23 @@ const About = () => {
                 ))}
               </div>
             </div>
+            
+            {/* Hobbies */}
+            <div className="mt-6">
+              <h3 className="font-heading text-xl font-semibold mb-4 text-foreground">
+                Hobbies
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {["Watching Cricket", "Playing Esports", "Watching Esports"].map((hobby) => (
+                  <span
+                    key={hobby}
+                    className="px-4 py-2 rounded-full bg-secondary text-foreground border border-border text-sm font-medium hover:border-primary/50 transition-colors"
+                  >
+                    {hobby}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
           
           {/* Right side - Highlight cards */}
