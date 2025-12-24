@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, ArrowUpRight } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, ArrowUpRight, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -14,6 +14,12 @@ const Contact = () => {
       label: "Phone",
       value: "+91 9193664452",
       href: "tel:+919193664452",
+    },
+    {
+      icon: MessageCircle,
+      label: "WhatsApp",
+      value: "+91 9193664452",
+      href: "https://wa.me/919193664452",
     },
     {
       icon: MapPin,
@@ -36,7 +42,7 @@ const Contact = () => {
             Let's <span className="text-gradient">Connect</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            I'm actively seeking opportunities in finance, investment banking, and product management.
+            I'm actively seeking opportunities in product management, finance, and investment banking.
             Let's discuss how I can contribute to your organization.
           </p>
         </div>

@@ -1,9 +1,9 @@
 const Skills = () => {
   const skills = [
+    { name: "Product Management", level: 92 },
     { name: "Communication", level: 90 },
     { name: "Decision Making", level: 95 },
     { name: "Problem Solving", level: 85 },
-    { name: "Project Management", level: 80 },
     { name: "Innovation", level: 88 },
     { name: "Team Collaboration", level: 92 },
   ];
