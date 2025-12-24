@@ -32,12 +32,12 @@ const About = () => {
             </p>
             <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
               Where Gaming Meets
-              <span className="text-gradient"> Finance</span>
+              <span className="text-gradient"> Product</span>
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm a highly driven commerce graduate seeking opportunities in finance, 
-                investment banking, and product management. My unique background combines 
+                I'm a highly driven commerce graduate seeking opportunities in product 
+                management, with additional interests in finance and investment banking. My unique background combines 
                 analytical skills with the discipline and strategic thinking developed 
                 through professional esports.
               </p>

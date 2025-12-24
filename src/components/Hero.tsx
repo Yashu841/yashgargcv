@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="container relative z-10 px-6 text-center">
         <div className="animate-slide-up">
           <p className="text-primary font-medium tracking-[0.3em] uppercase mb-6 text-sm">
-            Commerce Graduate • Esports Veteran
+            Product Manager • Esports Veteran
           </p>
           
           <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-bold mb-6 tracking-tight">
@@ -24,8 +24,8 @@ const Hero = () => {
           </h1>
           
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed">
-            Aspiring finance professional with a unique blend of analytical thinking 
-            and competitive esports experience. Ready to bring strategic excellence to your organization.
+            Aspiring product manager with a unique blend of analytical thinking 
+            and competitive esports experience. Ready to bring strategic product excellence to your organization.
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
