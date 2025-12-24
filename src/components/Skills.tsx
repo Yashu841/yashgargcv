@@ -3,6 +3,7 @@ const Skills = () => {
     { name: "Product Management", level: 92 },
     { name: "Communication", level: 90 },
     { name: "Decision Making", level: 95 },
+    { name: "Finance Analytics", level: 80 },
     { name: "Problem Solving", level: 85 },
     { name: "Innovation", level: 88 },
     { name: "Team Collaboration", level: 92 },

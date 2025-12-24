@@ -37,20 +37,37 @@ const About = () => {
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 I'm a highly driven commerce graduate seeking opportunities in product 
-                management, with additional interests in finance and investment banking. My unique background combines 
-                analytical skills with the discipline and strategic thinking developed 
-                through professional esports.
+                management, with additional interests in finance and investment banking. 
+                My unique background combines analytical skills with the discipline and 
+                strategic thinking developed through professional esports.
               </p>
               <p>
                 During my time at S8UL Esports, I competed at the highest level in PUBG 
-                Mobile tournaments, developing exceptional decision-making abilities under 
-                pressure and collaborative team skills that translate directly to the 
+                Mobile New State tournaments, developing exceptional decision-making abilities 
+                under pressure and collaborative team skills that translate directly to the 
                 business world.
               </p>
               <p>
                 I bring strong communication skills, innovative problem-solving capabilities, 
                 and an unwavering commitment to excellence in everything I do.
               </p>
+            </div>
+            
+            {/* Interests */}
+            <div className="mt-8">
+              <h3 className="font-heading text-xl font-semibold mb-4 text-foreground">
+                Interests
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {["Product Strategy", "Esports", "Investment Banking", "Finance", "Technology", "Gaming"].map((interest) => (
+                  <span
+                    key={interest}
+                    className="px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/30 text-sm font-medium hover:bg-primary/20 transition-colors"
+                  >
+                    {interest}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
           
