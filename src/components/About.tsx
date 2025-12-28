@@ -1,6 +1,9 @@
 import { Briefcase, GraduationCap, Trophy } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const About = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  
   const highlights = [
     {
       icon: Briefcase,
@@ -20,7 +23,11 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 md:py-32 relative">
+    <section 
+      ref={ref as React.RefObject<HTMLElement>}
+      id="about" 
+      className={`py-24 md:py-32 relative transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+    >
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-glow opacity-30" />
       
       <div className="container px-6 relative z-10">

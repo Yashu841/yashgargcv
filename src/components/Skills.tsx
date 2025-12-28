@@ -1,4 +1,8 @@
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
 const Skills = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  
   const skills = [
     { name: "Product Management", level: 92 },
     { name: "Communication", level: 90 },
@@ -21,7 +25,11 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-24 md:py-32 relative">
+    <section 
+      ref={ref as React.RefObject<HTMLElement>}
+      id="skills" 
+      className={`py-24 md:py-32 relative transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+    >
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-glow opacity-30" />
       
       <div className="container px-6 relative z-10">

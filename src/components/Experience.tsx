@@ -1,8 +1,15 @@
 import { Calendar, Building2 } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Experience = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  
   return (
-    <section id="experience" className="py-24 md:py-32 relative bg-secondary/30">
+    <section 
+      ref={ref as React.RefObject<HTMLElement>}
+      id="experience" 
+      className={`py-24 md:py-32 relative bg-secondary/30 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+    >
       <div className="absolute inset-0 bg-[linear-gradient(hsl(var(--border))_1px,transparent_1px),linear-gradient(90deg,hsl(var(--border))_1px,transparent_1px)] bg-[size:60px_60px] opacity-10" />
       
       <div className="container px-6 relative z-10">
