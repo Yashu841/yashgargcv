@@ -3,6 +3,12 @@ import { GraduationCap } from "lucide-react";
 const Education = () => {
   const education = [
     {
+      degree: "Product Management with AI",
+      institution: "IIT Roorkee (Managed by Masai)",
+      year: "Currently Enrolled",
+      score: "Ongoing",
+    },
+    {
       degree: "Bachelors of Commerce (B.Com)",
       institution: "Delhi University - School of Open Learning",
       year: "2022 - 2025",
