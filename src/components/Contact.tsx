@@ -1,7 +1,10 @@
 import { Mail, Phone, MapPin, Linkedin, ArrowUpRight, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Contact = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  
   const contactInfo = [
     {
       icon: Mail,
@@ -30,7 +33,11 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 md:py-32 relative">
+    <section 
+      ref={ref as React.RefObject<HTMLElement>}
+      id="contact" 
+      className={`py-24 md:py-32 relative transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+    >
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-glow opacity-40" />
       
       <div className="container px-6 relative z-10">

@@ -1,6 +1,9 @@
 import { GraduationCap } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Education = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  
   const education = [
     {
       degree: "Product Management with AI",
@@ -29,7 +32,11 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-24 md:py-32 relative bg-secondary/30">
+    <section 
+      ref={ref as React.RefObject<HTMLElement>}
+      id="education" 
+      className={`py-24 md:py-32 relative bg-secondary/30 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+    >
       <div className="container px-6 relative z-10">
         <div className="text-center mb-16">
           <p className="text-primary font-medium tracking-[0.2em] uppercase mb-4 text-sm">
