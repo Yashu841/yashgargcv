@@ -1,5 +1,6 @@
 import { ArrowDown, Mail, Linkedin, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profilePhoto from "@/assets/profile.jpg";
 
 const Hero = () => {
   return (
@@ -13,6 +14,18 @@ const Hero = () => {
       
       <div className="container relative z-10 px-6 text-center">
         <div className="animate-slide-up">
+          {/* Profile Photo */}
+          <div className="mb-8">
+            <div className="relative inline-block">
+              <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl animate-pulse-slow" />
+              <img 
+                src={profilePhoto} 
+                alt="Yash Garg - Product Manager" 
+                className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary/30 shadow-2xl"
+              />
+            </div>
+          </div>
+          
           <p className="text-primary font-medium tracking-[0.3em] uppercase mb-6 text-sm">
             Product Manager • Esports Veteran
           </p>
