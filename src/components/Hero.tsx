@@ -4,7 +4,7 @@ import profilePhoto from "@/assets/profile.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-24">
       {/* Background glow effects */}
       <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-glow opacity-60 animate-pulse-slow" />
       <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-glow opacity-40 animate-pulse-slow" style={{ animationDelay: '2s' }} />
@@ -15,33 +15,33 @@ const Hero = () => {
       <div className="container relative z-10 px-6 text-center">
         <div className="animate-slide-up">
           {/* Profile Photo */}
-          <div className="mb-8">
+          <div className="mb-6">
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl animate-pulse-slow" />
               <img 
                 src={profilePhoto} 
                 alt="Yash Garg - Product Manager" 
-                className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary/30 shadow-2xl"
+                className="relative w-28 h-28 md:w-36 md:h-36 rounded-full object-cover border-4 border-primary/30 shadow-2xl"
               />
             </div>
           </div>
           
-          <p className="text-primary font-medium tracking-[0.3em] uppercase mb-6 text-sm">
+          <p className="text-primary font-medium tracking-[0.3em] uppercase mb-4 text-sm">
             Product Manager • Esports Veteran
           </p>
           
-          <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-bold mb-6 tracking-tight">
+          <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold mb-4 tracking-tight">
             <span className="text-foreground">YASH</span>
             <br />
             <span className="text-gradient">GARG</span>
           </h1>
           
-          <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed">
+          <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-6 leading-relaxed">
             Aspiring product manager with a unique blend of analytical thinking 
             and competitive esports experience. Ready to bring strategic product excellence to your organization.
           </p>
           
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-6">
             <div className="flex items-center gap-2 text-muted-foreground">
               <MapPin size={16} className="text-primary" />
               <span className="text-sm">Hapur, Uttar Pradesh</span>
