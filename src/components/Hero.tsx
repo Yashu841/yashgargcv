@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
           
           <p className="text-primary font-medium tracking-[0.3em] uppercase mb-4 text-sm">
-            Product Manager • Esports Veteran
+            Aspiring Product Manager • Esports Veteran
           </p>
           
           <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold mb-4 tracking-tight">
