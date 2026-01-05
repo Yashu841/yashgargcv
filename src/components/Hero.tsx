@@ -1,4 +1,4 @@
-import { ArrowDown, Mail, Linkedin, MapPin } from "lucide-react";
+import { ArrowDown, Mail, Linkedin, MapPin, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/profile.jpg";
 
@@ -63,6 +63,12 @@ const Hero = () => {
               <a href="https://www.linkedin.com/in/yash-garg-79b209325" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="mr-2 h-4 w-4" />
                 LinkedIn
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" asChild>
+              <a href="/Yash_Garg-Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <FileText className="mr-2 h-4 w-4" />
+                View Resume
               </a>
             </Button>
           </div>
