@@ -1,18 +1,10 @@
-import { ArrowDown, Mail, Linkedin, MapPin, FileText } from "lucide-react";
+import { ArrowDown, FileText, Linkedin, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import profilePhoto from "@/assets/profile.jpg";
+import resumePreview from "@/assets/resume-preview.png";
 
 const Hero = () => {
-  const resumePath = "/Yash_Garg-Resume.pdf";
-
-  // Open resume via Google's Drive-style viewer (more reliable than built-in PDF viewers on some devices)
-  const resumeViewerUrl =
-    typeof window !== "undefined"
-      ? `https://drive.google.com/viewerng/viewer?embedded=true&url=${encodeURIComponent(
-          `${window.location.origin}${resumePath}`
-        )}`
-      : resumePath;
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-24">
       {/* Background glow effects */}
@@ -26,6 +18,8 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[linear-gradient(hsl(var(--border))_1px,transparent_1px),linear-gradient(90deg,hsl(var(--border))_1px,transparent_1px)] bg-[size:80px_80px] opacity-20" />
 
       <div className="container relative z-10 px-6 text-center">
+        {/* Preload resume image for instant open */}
+        <img src={resumePreview} alt="" aria-hidden="true" className="hidden" loading="eager" />
         <div className="animate-slide-up">
           {/* Profile Photo */}
           <div className="mb-6">
@@ -84,12 +78,24 @@ const Hero = () => {
                 LinkedIn
               </a>
             </Button>
-            <Button variant="outline" size="lg" asChild>
-              <a href={resumeViewerUrl} target="_blank" rel="noopener noreferrer" aria-label="View resume">
-                <FileText className="mr-2 h-4 w-4" />
-                View Resume
-              </a>
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button variant="outline" size="lg" aria-label="View resume">
+                  <FileText className="mr-2 h-4 w-4" />
+                  View Resume
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-3xl p-4">
+                <DialogTitle className="sr-only">Resume</DialogTitle>
+                <img
+                  src={resumePreview}
+                  alt="Yash Garg resume preview"
+                  className="w-full h-auto rounded-md border"
+                  loading="eager"
+                  decoding="async"
+                />
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
 
