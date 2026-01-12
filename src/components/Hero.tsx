@@ -94,6 +94,14 @@ const Hero = () => {
                   loading="eager"
                   decoding="async"
                 />
+                <div className="flex justify-center mt-4">
+                  <Button asChild>
+                    <a href="/Yash_Garg-Resume.pdf" download="Yash_Garg_Resume.pdf">
+                      <ArrowDown className="mr-2 h-4 w-4" />
+                      Download PDF
+                    </a>
+                  </Button>
+                </div>
               </DialogContent>
             </Dialog>
           </div>
