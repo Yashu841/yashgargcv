@@ -7,15 +7,21 @@ const projects = [
     title: "AI Productify",
     description:
       "A web app that helps users generate professional product descriptions, PRDs, and product ideas using AI in seconds. It turns simple inputs into clear, structured product content — helping founders, PMs, and creators move from idea to execution faster.",
+    whyBuilt:
+      "Writing PRDs and product copy takes time and clarity. I wanted to build a tool that helps anyone — especially freshers and founders — think and write like a Product Manager.",
     highlights: [
       "Generates AI-written product descriptions and product ideas",
       "Converts rough inputs into structured, readable outputs",
       "Works instantly through a simple web interface",
     ],
-    impact:
-      "Demonstrates ability to apply AI to solve real product problems, build full-stack web apps, and turn product thinking into working software.",
+    demonstrates: [
+      "Apply AI to solve real product problems",
+      "Build and deploy full-stack web apps",
+      "Design clear, user-friendly product experiences",
+      "Turn product thinking into working software",
+    ],
     link: "https://ai-productify--Yashgarg1212.replit.app",
-    tags: ["AI", "JavaScript", "Full-Stack", "Product Management"],
+    tags: ["HTML", "CSS", "JavaScript", "AI APIs"],
   },
 ];
 
@@ -60,27 +66,49 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="mb-6">
-                <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">
-                  Key Features
+              <div className="mb-6 p-4 rounded-lg bg-primary/5 border border-primary/10">
+                <h4 className="text-sm font-semibold text-foreground mb-2 uppercase tracking-wide">
+                  Why I Built It
                 </h4>
-                <ul className="space-y-2">
-                  {project.highlights.map((highlight, index) => (
-                    <li
-                      key={index}
-                      className="flex items-start gap-2 text-muted-foreground text-sm"
-                    >
-                      <span className="text-primary mt-1">•</span>
-                      {highlight}
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-sm text-muted-foreground italic">
+                  {project.whyBuilt}
+                </p>
               </div>
 
-              <div className="mb-6 p-4 rounded-lg bg-primary/5 border border-primary/10">
-                <p className="text-sm text-muted-foreground italic">
-                  {project.impact}
-                </p>
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">
+                    Key Features
+                  </h4>
+                  <ul className="space-y-2">
+                    {project.highlights.map((highlight, index) => (
+                      <li
+                        key={index}
+                        className="flex items-start gap-2 text-muted-foreground text-sm"
+                      >
+                        <span className="text-primary mt-1">•</span>
+                        {highlight}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">
+                    What It Demonstrates
+                  </h4>
+                  <ul className="space-y-2">
+                    {project.demonstrates.map((item, index) => (
+                      <li
+                        key={index}
+                        className="flex items-start gap-2 text-muted-foreground text-sm"
+                      >
+                        <span className="text-primary mt-1">✓</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
 
               <div className="flex flex-wrap items-center justify-between gap-4">
