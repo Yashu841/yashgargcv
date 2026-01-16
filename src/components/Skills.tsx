@@ -46,11 +46,13 @@ const Skills = () => {
       description: "Hands-on approach to AI for real-world applications",
       certificateId: "231713-29841836-32914",
       image: yuvaAiCert,
+      rotate: true,
     },
     {
       title: "ICAT Participation Certificate",
       description: "Internship Common Aptitude Test participation",
       certificateId: "CIT-P-2676036",
+      score: "96%",
       image: icatCert,
     },
   ];
@@ -118,7 +120,10 @@ const Skills = () => {
                             {cert.title}
                           </h3>
                           <p className="text-muted-foreground text-sm line-clamp-1">{cert.description}</p>
-                          <p className="text-xs text-primary/70 mt-1 font-mono">ID: {cert.certificateId}</p>
+                          <p className="text-xs text-primary/70 mt-1 font-mono">
+                            ID: {cert.certificateId}
+                            {cert.score && <span className="ml-2 text-green-500 font-semibold">| Score: {cert.score}</span>}
+                          </p>
                         </div>
                         <div className="flex items-center gap-1 text-primary text-sm opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0">
                           <Eye className="w-4 h-4" />
@@ -133,7 +138,7 @@ const Skills = () => {
                       <img
                         src={cert.image}
                         alt={`${cert.title} certificate`}
-                        className="w-full h-auto rounded-md border pointer-events-none select-none"
+                        className={`w-full h-auto rounded-md border pointer-events-none select-none ${cert.rotate ? 'rotate-180' : ''}`}
                         loading="eager"
                         decoding="async"
                         draggable={false}
