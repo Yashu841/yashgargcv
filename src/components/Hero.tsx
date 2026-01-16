@@ -85,18 +85,26 @@ const Hero = () => {
                   View Resume
                 </Button>
               </DialogTrigger>
-              <DialogContent className="max-w-3xl p-4">
+              <DialogContent className="max-w-4xl max-h-[90vh] p-4 overflow-hidden flex flex-col">
                 <DialogTitle className="sr-only">Resume</DialogTitle>
-                <img
-                  src={resumePreview}
-                  alt="Yash Garg resume preview"
-                  className="w-full h-auto rounded-md border"
-                  loading="eager"
-                  decoding="async"
-                />
-                <div className="flex justify-center mt-4">
+                <div className="flex-1 overflow-auto">
+                  <img
+                    src={resumePreview}
+                    alt="Yash Garg resume preview"
+                    className="w-full h-auto rounded-md border pointer-events-none select-none"
+                    loading="eager"
+                    decoding="async"
+                    draggable={false}
+                  />
+                </div>
+                <div className="flex justify-center pt-4 flex-shrink-0">
                   <Button asChild>
-                    <a href="/Yash_Garg-Resume.pdf" download="Yash_Garg_Resume.pdf">
+                    <a 
+                      href="/Yash_Garg-Resume.pdf" 
+                      download="Yash_Garg_Resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <ArrowDown className="mr-2 h-4 w-4" />
                       Download PDF
                     </a>
