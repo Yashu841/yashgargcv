@@ -1,4 +1,13 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Eye } from "lucide-react";
+
+// Certificate images
+import masaiverseCert from "@/assets/certificates/masaiverse-coding-ai.jpg";
+import oracleCert from "@/assets/certificates/oracle-data-platform.jpg";
+import jpmorganCert from "@/assets/certificates/jpmorgan-investment-banking.jpg";
+import yuvaAiCert from "@/assets/certificates/yuva-ai-india-mission.jpg";
+import icatCert from "@/assets/certificates/icat-participation.jpg";
 
 const Skills = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -15,12 +24,34 @@ const Skills = () => {
 
   const certifications = [
     {
-      title: "Oracle Database Platform Foundation Associate",
-      description: "Cloud infrastructure and Oracle database operations",
+      title: "Masaiverse - Coding with AI",
+      description: "Participated in masterclass 'Coding with AI - From idea to product in minutes'",
+      certificateId: "MASAIVERSE09012651",
+      image: masaiverseCert,
     },
     {
-      title: "JP Morgan Investment Banking",
-      description: "Financial analysis and investment banking fundamentals",
+      title: "Oracle Data Platform 2025 Certified Foundations Associate",
+      description: "Cloud infrastructure and Oracle database operations",
+      certificateId: "103012989OCI25DCFA",
+      image: oracleCert,
+    },
+    {
+      title: "JP Morgan Investment Banking Job Simulation",
+      description: "Financial analysis, M&A targets, and investment recommendations",
+      certificateId: "TyK7he6uGfHyRfrZB",
+      image: jpmorganCert,
+    },
+    {
+      title: "Certification of YUVA AI FOR ALL - INDIA AI MISSION",
+      description: "Hands-on approach to AI for real-world applications",
+      certificateId: "231713-29841836-32914",
+      image: yuvaAiCert,
+    },
+    {
+      title: "ICAT Participation Certificate",
+      description: "Internship Common Aptitude Test participation",
+      certificateId: "CIT-P-2676036",
+      image: icatCert,
     },
   ];
 
@@ -73,24 +104,47 @@ const Skills = () => {
               Certi<span className="text-gradient">fications</span>
             </h2>
             
-            <div className="space-y-6">
+            <div className="space-y-4">
               {certifications.map((cert, index) => (
-                <div
-                  key={cert.title}
-                  className="card-gradient p-6 rounded-xl border border-border hover:border-primary/50 transition-all duration-300 group"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-heading font-bold text-xl group-hover:glow-effect transition-all">
-                      {index + 1}
+                <Dialog key={cert.title}>
+                  <DialogTrigger asChild>
+                    <div className="card-gradient p-5 rounded-xl border border-border hover:border-primary/50 transition-all duration-300 group cursor-pointer">
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-heading font-bold text-lg group-hover:glow-effect transition-all flex-shrink-0">
+                          {index + 1}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="font-heading text-base font-semibold mb-1 text-foreground line-clamp-2">
+                            {cert.title}
+                          </h3>
+                          <p className="text-muted-foreground text-sm line-clamp-1">{cert.description}</p>
+                          <p className="text-xs text-primary/70 mt-1 font-mono">ID: {cert.certificateId}</p>
+                        </div>
+                        <div className="flex items-center gap-1 text-primary text-sm opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0">
+                          <Eye className="w-4 h-4" />
+                          <span>View</span>
+                        </div>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="font-heading text-lg font-semibold mb-2 text-foreground">
-                        {cert.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm">{cert.description}</p>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-4xl max-h-[90vh] p-4 overflow-hidden flex flex-col">
+                    <DialogTitle className="text-lg font-heading font-semibold mb-2">{cert.title}</DialogTitle>
+                    <div className="flex-1 overflow-auto">
+                      <img
+                        src={cert.image}
+                        alt={`${cert.title} certificate`}
+                        className="w-full h-auto rounded-md border pointer-events-none select-none"
+                        loading="eager"
+                        decoding="async"
+                        draggable={false}
+                        onContextMenu={(e) => e.preventDefault()}
+                      />
                     </div>
-                  </div>
-                </div>
+                    <p className="text-center text-sm text-muted-foreground pt-3 flex-shrink-0">
+                      Certificate ID: <span className="font-mono text-primary">{cert.certificateId}</span>
+                    </p>
+                  </DialogContent>
+                </Dialog>
               ))}
             </div>
             
