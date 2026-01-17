@@ -1,8 +1,10 @@
-import { ArrowDown, FileText, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowDown, ChevronLeft, ChevronRight, FileText, Linkedin, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import profilePhoto from "@/assets/profile.jpg";
-import resumePreview from "@/assets/resume-preview.png";
+import resumePreviewPage1 from "@/assets/resume-preview.png";
+import resumePreviewPage2 from "@/assets/resume-preview-page2.png";
 
 const Hero = () => {
   return (
@@ -18,8 +20,9 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[linear-gradient(hsl(var(--border))_1px,transparent_1px),linear-gradient(90deg,hsl(var(--border))_1px,transparent_1px)] bg-[size:80px_80px] opacity-20" />
 
       <div className="container relative z-10 px-6 text-center">
-        {/* Preload resume image for instant open */}
-        <img src={resumePreview} alt="" aria-hidden="true" className="hidden" loading="eager" />
+        {/* Preload resume images for instant open */}
+        <img src={resumePreviewPage1} alt="" aria-hidden="true" className="hidden" loading="eager" />
+        <img src={resumePreviewPage2} alt="" aria-hidden="true" className="hidden" loading="eager" />
         <div className="animate-slide-up">
           {/* Profile Photo */}
           <div className="mb-6">
@@ -87,15 +90,27 @@ const Hero = () => {
               </DialogTrigger>
               <DialogContent className="max-w-4xl max-h-[90vh] p-4 overflow-hidden flex flex-col">
                 <DialogTitle className="sr-only">Resume</DialogTitle>
-                <div className="flex-1 overflow-auto">
-                  <img
-                    src={resumePreview}
-                    alt="Yash Garg resume preview"
-                    className="w-full h-auto rounded-md border pointer-events-none select-none"
-                    loading="eager"
-                    decoding="async"
-                    draggable={false}
-                  />
+                <div className="flex-1 overflow-hidden px-12">
+                  <Carousel className="w-full">
+                    <CarouselContent>
+                      {[resumePreviewPage1, resumePreviewPage2].map((page, index) => (
+                        <CarouselItem key={index}>
+                          <div className="overflow-auto max-h-[65vh]">
+                            <img
+                              src={page}
+                              alt={`Yash Garg resume page ${index + 1}`}
+                              className="w-full h-auto rounded-md border pointer-events-none select-none"
+                              loading="eager"
+                              decoding="async"
+                              draggable={false}
+                            />
+                          </div>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="left-0" />
+                    <CarouselNext className="right-0" />
+                  </Carousel>
                 </div>
                 <div className="flex justify-center pt-4 flex-shrink-0">
                   <Button asChild>
