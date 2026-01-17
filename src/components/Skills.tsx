@@ -14,12 +14,24 @@ const Skills = () => {
   
   const skills = [
     { name: "Product Management", level: 92 },
+    { name: "Prototyping & Design", level: 85 },
+    { name: "User Research & Interviews", level: 88 },
+    { name: "User Stories & PRD Writing", level: 90 },
+    { name: "Product Thinking", level: 92 },
+    { name: "Roadmap Planning", level: 87 },
+    { name: "Problem Framing & Prioritization", level: 90 },
+    { name: "Complex Problem Solving", level: 88 },
     { name: "Communication", level: 90 },
-    { name: "Decision Making", level: 95 },
-    { name: "Finance Analytics", level: 80 },
-    { name: "Problem Solving", level: 85 },
-    { name: "Innovation", level: 88 },
     { name: "Team Collaboration", level: 92 },
+  ];
+
+  const tools = [
+    "Figma",
+    "Mixpanel",
+    "Miro",
+    "Excel / Google Sheets",
+    "SurveyMonkey",
+    "Jira",
   ];
 
   const certifications = [
@@ -153,8 +165,22 @@ const Skills = () => {
               ))}
             </div>
             
-            {/* Languages */}
+            {/* Tools */}
             <div className="mt-10">
+              <h3 className="font-heading text-xl font-semibold mb-4 text-foreground">
+                Tools
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {tools.map((tool) => (
+                  <span key={tool} className="px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/30 text-sm font-medium">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            {/* Languages */}
+            <div className="mt-8">
               <h3 className="font-heading text-xl font-semibold mb-4 text-foreground">
                 Languages
               </h3>
