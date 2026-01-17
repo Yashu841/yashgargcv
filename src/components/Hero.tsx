@@ -1,7 +1,6 @@
-import { ArrowDown, ChevronLeft, ChevronRight, FileText, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowDown, FileText, Linkedin, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import profilePhoto from "@/assets/profile.jpg";
 import resumePreviewPage1 from "@/assets/resume-preview.png";
 import resumePreviewPage2 from "@/assets/resume-preview-page2.png";
@@ -90,27 +89,25 @@ const Hero = () => {
               </DialogTrigger>
               <DialogContent className="max-w-4xl max-h-[90vh] p-4 overflow-hidden flex flex-col">
                 <DialogTitle className="sr-only">Resume</DialogTitle>
-                <div className="flex-1 overflow-hidden px-12">
-                  <Carousel className="w-full">
-                    <CarouselContent>
-                      {[resumePreviewPage1, resumePreviewPage2].map((page, index) => (
-                        <CarouselItem key={index}>
-                          <div className="overflow-auto max-h-[65vh]">
-                            <img
-                              src={page}
-                              alt={`Yash Garg resume page ${index + 1}`}
-                              className="w-full h-auto rounded-md border pointer-events-none select-none"
-                              loading="eager"
-                              decoding="async"
-                              draggable={false}
-                            />
-                          </div>
-                        </CarouselItem>
-                      ))}
-                    </CarouselContent>
-                    <CarouselPrevious className="left-0" />
-                    <CarouselNext className="right-0" />
-                  </Carousel>
+                <div className="flex-1 overflow-auto">
+                  <div className="space-y-4">
+                    <img
+                      src={resumePreviewPage1}
+                      alt="Yash Garg resume page 1"
+                      className="w-full h-auto rounded-md border pointer-events-none select-none"
+                      loading="eager"
+                      decoding="async"
+                      draggable={false}
+                    />
+                    <img
+                      src={resumePreviewPage2}
+                      alt="Yash Garg resume page 2"
+                      className="w-full h-auto rounded-md border pointer-events-none select-none"
+                      loading="eager"
+                      decoding="async"
+                      draggable={false}
+                    />
+                  </div>
                 </div>
                 <div className="flex justify-center pt-4 flex-shrink-0">
                   <Button asChild>
