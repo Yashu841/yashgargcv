@@ -68,6 +68,12 @@ const Skills = () => {
       score: "96%",
       image: icatCert,
     },
+    {
+      title: "Be10x AI Expert Certificate",
+      description: "AI Tools and ChatGPT workshop - presentations, data analysis & coding with AI",
+      certificateId: "BE10X-2026",
+      image: be10xCert,
+    },
   ];
 
   return (
