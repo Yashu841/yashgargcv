@@ -8,6 +8,7 @@ import oracleCert from "@/assets/certificates/oracle-data-platform.jpg";
 import jpmorganCert from "@/assets/certificates/jpmorgan-investment-banking.jpg";
 import yuvaAiCert from "@/assets/certificates/yuva-ai-india-mission.jpg";
 import icatCert from "@/assets/certificates/icat-participation.jpg";
+import be10xCert from "@/assets/certificates/be10x-ai-expert.jpg";
 
 const Skills = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -66,6 +67,12 @@ const Skills = () => {
       certificateId: "CIT-P-2676036",
       score: "96%",
       image: icatCert,
+    },
+    {
+      title: "Be10x AI Expert Certificate",
+      description: "AI Tools and ChatGPT workshop - presentations, data analysis & coding with AI",
+      certificateId: "BE10X-2026",
+      image: be10xCert,
     },
   ];
 
