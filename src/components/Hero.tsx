@@ -4,6 +4,8 @@ import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/
 import profilePhoto from "@/assets/profile.jpg";
 import resumePreviewPage1 from "@/assets/resume-preview.png";
 import resumePreviewPage2 from "@/assets/resume-preview-page2.png";
+import resumePreviewPage3 from "@/assets/resume-preview-page3.png";
+import resumePreviewPage4 from "@/assets/resume-preview-page4.png";
 
 const Hero = () => {
   return (
