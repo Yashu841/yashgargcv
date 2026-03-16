@@ -8,6 +8,7 @@ import oracleCert from "@/assets/certificates/oracle-data-platform.jpg";
 import jpmorganCert from "@/assets/certificates/jpmorgan-investment-banking.jpg";
 import yuvaAiCert from "@/assets/certificates/yuva-ai-india-mission.jpg";
 import icatCert from "@/assets/certificates/icat-participation.jpg";
+import be10xCert from "@/assets/certificates/be10x-ai-expert.jpg";
 
 const Skills = () => {
   const { ref, isVisible } = useScrollAnimation();
