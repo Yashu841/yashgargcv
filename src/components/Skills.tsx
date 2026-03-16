@@ -37,6 +37,12 @@ const Skills = () => {
 
   const certifications = [
     {
+      title: "Be10x AI Expert Certificate",
+      description: "AI Tools and ChatGPT workshop - presentations, data analysis & coding with AI",
+      certificateId: "BE10X-2026",
+      image: be10xCert,
+    },
+    {
       title: "Masaiverse - Coding with AI",
       description: "Participated in masterclass 'Coding with AI - From idea to product in minutes'",
       certificateId: "MASAIVERSE09012651",
@@ -67,12 +73,6 @@ const Skills = () => {
       certificateId: "CIT-P-2676036",
       score: "96%",
       image: icatCert,
-    },
-    {
-      title: "Be10x AI Expert Certificate",
-      description: "AI Tools and ChatGPT workshop - presentations, data analysis & coding with AI",
-      certificateId: "BE10X-2026",
-      image: be10xCert,
     },
   ];
 
