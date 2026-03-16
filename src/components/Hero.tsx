@@ -93,22 +93,17 @@ const Hero = () => {
                 <DialogTitle className="sr-only">Resume</DialogTitle>
                 <div className="flex-1 overflow-auto">
                   <div className="space-y-4">
-                    <img
-                      src={resumePreviewPage1}
-                      alt="Yash Garg resume page 1"
-                      className="w-full h-auto rounded-md border pointer-events-none select-none"
-                      loading="eager"
-                      decoding="async"
-                      draggable={false}
-                    />
-                    <img
-                      src={resumePreviewPage2}
-                      alt="Yash Garg resume page 2"
-                      className="w-full h-auto rounded-md border pointer-events-none select-none"
-                      loading="eager"
-                      decoding="async"
-                      draggable={false}
-                    />
+                    {[resumePreviewPage1, resumePreviewPage2, resumePreviewPage3, resumePreviewPage4].map((page, index) => (
+                      <img
+                        key={index}
+                        src={page}
+                        alt={`Yash Garg resume page ${index + 1}`}
+                        className="w-full h-auto rounded-md border pointer-events-none select-none"
+                        loading="eager"
+                        decoding="async"
+                        draggable={false}
+                      />
+                    ))}
                   </div>
                 </div>
                 <div className="flex justify-center pt-4 flex-shrink-0">
