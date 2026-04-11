@@ -23,7 +23,7 @@ const projects = [
     ],
     link: "",
     prototypeLink: "https://stitch.withgoogle.com/preview/15251693336887082855?node-id=fd907ea77be14c9880af2f358126200f",
-    caseStudyPdf: "/LinkedIn_Improvement_Project.pdf",
+    caseStudyLink: "https://docs.google.com/document/d/13kO0hzRfXvX2CpPTuWVk9VHMnhpW9R97Uzndi0ozx-s/edit?usp=sharing",
     tags: ["Product Management", "UX Design", "System Thinking", "Prototyping"],
   },
   {
@@ -45,7 +45,7 @@ const projects = [
     ],
     link: "https://ai-productify--Yashgarg1212.replit.app",
     prototypeLink: "",
-    caseStudyPdf: "",
+    caseStudyLink: "",
     tags: ["HTML", "CSS", "JavaScript", "AI APIs"],
   },
 ];
@@ -157,9 +157,9 @@ const Projects = () => {
                       </a>
                     </Button>
                   )}
-                  {project.caseStudyPdf && (
+                  {project.caseStudyLink && (
                     <Button variant="outline" size="sm" asChild>
-                      <a href={project.caseStudyPdf} target="_blank" rel="noopener noreferrer">
+                      <a href={project.caseStudyLink} target="_blank" rel="noopener noreferrer">
                         <FileText className="mr-2 h-4 w-4" />
                         View Case Study
                       </a>
