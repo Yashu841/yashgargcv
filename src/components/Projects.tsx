@@ -1,4 +1,4 @@
-import { ExternalLink, Sparkles } from "lucide-react";
+import { ExternalLink, Sparkles, FileText, Play } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { Button } from "@/components/ui/button";
 
@@ -22,6 +22,8 @@ const projects = [
       "Focus on user pain points and measurable success metrics",
     ],
     link: "",
+    prototypeLink: "https://stitch.withgoogle.com/preview/15251693336887082855?node-id=fd907ea77be14c9880af2f358126200f",
+    caseStudyPdf: "/LinkedIn_Improvement_Project.pdf",
     tags: ["Product Management", "UX Design", "System Thinking", "Prototyping"],
   },
   {
@@ -42,6 +44,8 @@ const projects = [
       "Turn product thinking into working software",
     ],
     link: "https://ai-productify--Yashgarg1212.replit.app",
+    prototypeLink: "",
+    caseStudyPdf: "",
     tags: ["HTML", "CSS", "JavaScript", "AI APIs"],
   },
 ];
@@ -144,18 +148,32 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {project.link && (
-                  <Button variant="outline" size="sm" asChild>
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      View Project
-                    </a>
-                  </Button>
-                )}
+                <div className="flex flex-wrap gap-2">
+                  {project.link && (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        View Project
+                      </a>
+                    </Button>
+                  )}
+                  {project.caseStudyPdf && (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.caseStudyPdf} target="_blank" rel="noopener noreferrer">
+                        <FileText className="mr-2 h-4 w-4" />
+                        View Case Study
+                      </a>
+                    </Button>
+                  )}
+                  {project.prototypeLink && (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.prototypeLink} target="_blank" rel="noopener noreferrer">
+                        <Play className="mr-2 h-4 w-4" />
+                        View Prototype
+                      </a>
+                    </Button>
+                  )}
+                </div>
               </div>
             </div>
           ))}
