@@ -23,7 +23,7 @@ const projects = [
     ],
     link: "",
     prototypeLink: "https://stitch.withgoogle.com/preview/15251693336887082855?node-id=fd907ea77be14c9880af2f358126200f",
-    caseStudyPdf: "/LinkedIn_Improvement_Project.pdf",
+    caseStudyLink: "https://docs.google.com/document/d/13kO0hzRfXvX2CpPTuWVk9VHMnhpW9R97Uzndi0ozx-s/edit?usp=sharing",
     tags: ["Product Management", "UX Design", "System Thinking", "Prototyping"],
   },
   {
