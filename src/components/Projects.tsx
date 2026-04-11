@@ -4,6 +4,27 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
+    title: "LinkedIn Job Relevance System",
+    description:
+      "A product case study on improving job relevance for freshers on LinkedIn — designing a self-improving job matching system that reduces noise and improves career outcomes through smart matching, skill gap detection, and feedback loops.",
+    whyBuilt:
+      "Freshers face irrelevant recommendations, high application volume with low response rates, and no visibility into why jobs match. I wanted to design a system that gives users context, direction, and feedback — not just listings.",
+    highlights: [
+      "Smart Match Score showing relevance % for each job",
+      "Match Explanation highlighting why a job fits & missing skills",
+      "Skill Gap Detection identifying high-impact skills to improve",
+      "Feedback Loop where users mark irrelevant jobs to adapt recommendations",
+    ],
+    demonstrates: [
+      "End-to-end product thinking from problem to prototype",
+      "System design with signal capture, intelligent matching & feedback loops",
+      "Low-fi (Visily) and high-fi (Google Stitch) design process",
+      "Focus on user pain points and measurable success metrics",
+    ],
+    link: "",
+    tags: ["Product Management", "UX Design", "System Thinking", "Prototyping"],
+  },
+  {
     title: "AI Productify",
     description:
       "A web app that helps users generate professional product descriptions, PRDs, and product ideas using AI in seconds. It turns simple inputs into clear, structured product content — helping founders, PMs, and creators move from idea to execution faster.",
