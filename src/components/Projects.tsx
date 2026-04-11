@@ -144,16 +144,18 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <Button variant="outline" size="sm" asChild>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    View Project
-                  </a>
-                </Button>
+                {project.link && (
+                  <Button variant="outline" size="sm" asChild>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      View Project
+                    </a>
+                  </Button>
+                )}
               </div>
             </div>
           ))}
