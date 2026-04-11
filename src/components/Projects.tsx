@@ -45,7 +45,7 @@ const projects = [
     ],
     link: "https://ai-productify--Yashgarg1212.replit.app",
     prototypeLink: "",
-    caseStudyPdf: "",
+    caseStudyLink: "",
     tags: ["HTML", "CSS", "JavaScript", "AI APIs"],
   },
 ];
@@ -157,9 +157,9 @@ const Projects = () => {
                       </a>
                     </Button>
                   )}
-                  {project.caseStudyPdf && (
+                  {project.caseStudyLink && (
                     <Button variant="outline" size="sm" asChild>
-                      <a href={project.caseStudyPdf} target="_blank" rel="noopener noreferrer">
+                      <a href={project.caseStudyLink} target="_blank" rel="noopener noreferrer">
                         <FileText className="mr-2 h-4 w-4" />
                         View Case Study
                       </a>
