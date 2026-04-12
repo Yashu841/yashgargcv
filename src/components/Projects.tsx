@@ -53,6 +53,15 @@ const projects = [
 const Projects = () => {
   const { ref, isVisible } = useScrollAnimation();
 
+  let externalLinkTarget: "_self" | "_blank" = "_blank";
+  if (typeof window !== "undefined") {
+    try {
+      externalLinkTarget = window.self !== window.top ? "_self" : "_blank";
+    } catch {
+      externalLinkTarget = "_self";
+    }
+  }
+
   return (
     <section
       ref={ref as React.RefObject<HTMLElement>}
@@ -151,7 +160,7 @@ const Projects = () => {
                 <div className="flex flex-wrap gap-2">
                   {project.link && (
                     <Button variant="outline" size="sm" asChild>
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <a href={project.link} target={externalLinkTarget} rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />
                         View Project
                       </a>
@@ -159,7 +168,7 @@ const Projects = () => {
                   )}
                   {project.caseStudyLink && (
                     <Button variant="outline" size="sm" asChild>
-                      <a href={project.caseStudyLink} target="_blank" rel="noopener noreferrer">
+                      <a href={project.caseStudyLink} target={externalLinkTarget} rel="noopener noreferrer">
                         <FileText className="mr-2 h-4 w-4" />
                         View Case Study
                       </a>
@@ -167,7 +176,7 @@ const Projects = () => {
                   )}
                   {project.prototypeLink && (
                     <Button variant="outline" size="sm" asChild>
-                      <a href={project.prototypeLink} target="_blank" rel="noopener noreferrer">
+                      <a href={project.prototypeLink} target={externalLinkTarget} rel="noopener noreferrer">
                         <Play className="mr-2 h-4 w-4" />
                         View Prototype
                       </a>
