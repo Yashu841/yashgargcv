@@ -1,4 +1,4 @@
-import { ArrowDown, FileText, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowDown, FileText, Github, Linkedin, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import profilePhoto from "@/assets/profile.jpg";
@@ -80,6 +80,17 @@ const Hero = () => {
               >
                 <Linkedin className="mr-2 h-4 w-4" />
                 LinkedIn
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" asChild>
+              <a
+                href="https://github.com/Yashu841"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Yash Garg GitHub"
+              >
+                <Github className="mr-2 h-4 w-4" />
+                GitHub
               </a>
             </Button>
             <Dialog>

@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, ArrowUpRight, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, ArrowUpRight, MessageCircle, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
@@ -90,6 +90,13 @@ const Contact = () => {
                 <a href="https://www.linkedin.com/in/yash-garg-79b209325" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="mr-2 h-4 w-4" />
                   Connect on LinkedIn
+                  <ArrowUpRight className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+              <Button variant="outline" size="lg" className="flex-1" asChild>
+                <a href="https://github.com/Yashu841" target="_blank" rel="noopener noreferrer">
+                  <Github className="mr-2 h-4 w-4" />
+                  GitHub
                   <ArrowUpRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
