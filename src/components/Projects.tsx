@@ -48,6 +48,48 @@ const projects = [
     caseStudyLink: "",
     tags: ["HTML", "CSS", "JavaScript", "AI APIs"],
   },
+  {
+    title: "AI Travel Itinerary Planner",
+    description:
+      "A web app that generates personalized travel itineraries in seconds. Users enter their destination, duration, and preferences to receive a structured day-by-day plan covering activities, food spots, and travel tips.",
+    whyBuilt:
+      "Planning trips often takes hours of research across multiple sites. I wanted to build a tool that turns scattered travel decisions into a single, clear, ready-to-follow itinerary.",
+    highlights: [
+      "Generates day-wise travel plans tailored to user inputs",
+      "Covers activities, food recommendations, and local tips",
+      "Clean, mobile-friendly interface for quick planning",
+    ],
+    demonstrates: [
+      "Applying AI to solve everyday user problems",
+      "Designing input-to-output product flows",
+      "Shipping a usable product end-to-end",
+    ],
+    link: "https://yashgarg.lovable.app",
+    prototypeLink: "",
+    caseStudyLink: "",
+    tags: ["Product", "AI", "Web App", "Travel"],
+  },
+  {
+    title: "Hindi Shayari Generator",
+    description:
+      "An AI-powered app that generates original Hindi shayari on any theme or emotion. Built to make creative writing in Hindi accessible to everyone, from casual users to social media creators.",
+    whyBuilt:
+      "Most AI tools focus on English content. I wanted to build something that celebrates Hindi creativity and helps users express emotions beautifully in their own language.",
+    highlights: [
+      "Generates original shayari based on user themes",
+      "Supports a variety of moods and emotions",
+      "Simple, instant, and shareable output",
+    ],
+    demonstrates: [
+      "Building AI products for regional and cultural use cases",
+      "Rapid prototyping with modern AI tools",
+      "Designing for creative expression",
+    ],
+    link: "https://v0.app/chat/hindi-shayari-generator-bUXmQB7VRzv",
+    prototypeLink: "",
+    caseStudyLink: "",
+    tags: ["AI", "Hindi", "Creative", "Web App"],
+  },
 ];
 
 const Projects = () => {
