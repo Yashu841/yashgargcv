@@ -22,7 +22,7 @@ const projects = [
       "Focus on user pain points and measurable success metrics",
     ],
     link: "",
-    prototypeLink: "https://stitch.withgoogle.com/preview/15251693336887082855?node-id=fd907ea77be14c9880af2f358126200f",
+    prototypeLink: "https://stitch.withgoogle.com/projects/15251693336887082855",
     caseStudyLink: "https://docs.google.com/document/d/13kO0hzRfXvX2CpPTuWVk9VHMnhpW9R97Uzndi0ozx-s/edit?usp=sharing",
     tags: ["Product Management", "UX Design", "System Thinking", "Prototyping"],
   },
