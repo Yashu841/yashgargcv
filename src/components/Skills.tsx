@@ -14,26 +14,78 @@ import masaiDualCert from "@/assets/certificates/masai-dual-excellence.png";
 const Skills = () => {
   const { ref, isVisible } = useScrollAnimation();
   
-  const skills = [
-    { name: "Product Management", level: 92 },
-    { name: "Prototyping & Design", level: 85 },
-    { name: "User Research & Interviews", level: 88 },
-    { name: "User Stories & PRD Writing", level: 90 },
-    { name: "Product Thinking", level: 92 },
-    { name: "Roadmap Planning", level: 87 },
-    { name: "Problem Framing & Prioritization", level: 90 },
-    { name: "Complex Problem Solving", level: 88 },
-    { name: "Communication", level: 90 },
-    { name: "Team Collaboration", level: 92 },
+  const skillCategories = [
+    {
+      name: "Product Management",
+      skills: [
+        "Product Discovery & Validation",
+        "Product Strategy & Vision",
+        "Product Roadmapping",
+        "PRD Writing",
+        "User Stories",
+        "Backlog Management",
+        "Release Planning",
+        "GTM Strategy",
+        "A/B Testing",
+      ],
+    },
+    {
+      name: "User Research & Growth",
+      skills: [
+        "User Research",
+        "User Interviews",
+        "Journey Mapping",
+        "User Personas",
+        "Customer Feedback Analysis",
+        "Product Analytics",
+        "Growth Strategies",
+      ],
+    },
+    {
+      name: "Technical & Data",
+      skills: [
+        "SQL (Basics)",
+        "Product Analytics",
+        "KPI Measurement",
+        "Data-Driven Prioritization",
+        "API Integration (Basics)",
+        "Data Visualization (Basic)",
+      ],
+    },
+    {
+      name: "Leadership & Collaboration",
+      skills: [
+        "Cross-Functional Leadership",
+        "Stakeholder Management",
+        "Agile Methodologies (Scrum)",
+        "Team Collaboration",
+        "Problem Solving",
+        "Decision Making",
+      ],
+    },
+    {
+      name: "Domain",
+      skills: [
+        "FinTech",
+        "Telecom",
+        "Healthcare",
+        "SaaS",
+        "AI / ML Driven Products",
+      ],
+    },
   ];
 
   const tools = [
+    "JIRA",
+    "Confluence",
     "Figma",
-    "Mixpanel",
     "Miro",
-    "Excel / Google Sheets",
+    "Mixpanel",
+    "Excel",
+    "Google Sheets",
     "SurveyMonkey",
-    "Jira",
+    "Swagger",
+    "LeanIX",
   ];
 
   const certifications = [
@@ -102,21 +154,21 @@ const Skills = () => {
               Core <span className="text-gradient">Skills</span>
             </h2>
             
-            <div className="space-y-6">
-              {skills.map((skill) => (
-                <div key={skill.name}>
-                  <div className="flex justify-between mb-2">
-                    <span className="font-medium text-foreground">{skill.name}</span>
-                    <span className="text-primary">{skill.level}%</span>
-                  </div>
-                  <div className="h-2 bg-secondary rounded-full overflow-hidden">
-                    <div
-                      className="h-full rounded-full transition-all duration-1000 ease-out"
-                      style={{
-                        width: `${skill.level}%`,
-                        background: 'var(--gradient-primary)',
-                      }}
-                    />
+            <div className="space-y-8">
+              {skillCategories.map((category) => (
+                <div key={category.name}>
+                  <h3 className="font-heading text-lg font-semibold mb-3 text-foreground">
+                    {category.name}
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {category.skills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-3 py-1.5 rounded-full bg-primary/10 text-primary border border-primary/30 text-sm font-medium"
+                      >
+                        {skill}
+                      </span>
+                    ))}
                   </div>
                 </div>
               ))}
