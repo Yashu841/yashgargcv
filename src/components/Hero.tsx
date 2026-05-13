@@ -46,6 +46,7 @@ const Hero = () => {
             <span className="text-foreground">YASH</span>
             <br />
             <span className="text-gradient">GARG</span>
+            <span className="sr-only"> — Aspiring Product Manager &amp; Esports Veteran</span>
           </h1>
 
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-6 leading-relaxed">
