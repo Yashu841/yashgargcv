@@ -1,0 +1,13 @@
+# Yash Garg — Portfolio
+
+> Personal portfolio of Yash Garg, an aspiring Product Manager and esports veteran based in Hapur, India. Highlights experience, education, skills, certifications, and featured product projects.
+
+## Pages
+
+- [Home](/): Hero introduction, about, experience, projects, skills, certifications, education, and contact.
+
+## Contact
+
+- Email: yashgarg841@gmail.com
+- LinkedIn: https://www.linkedin.com/in/yash-garg-79b209325
+- GitHub: https://github.com/Yashu841
