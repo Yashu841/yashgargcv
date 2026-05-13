@@ -9,6 +9,7 @@ import jpmorganCert from "@/assets/certificates/jpmorgan-investment-banking.jpg"
 import yuvaAiCert from "@/assets/certificates/yuva-ai-india-mission.jpg";
 import icatCert from "@/assets/certificates/icat-participation.jpg";
 import be10xCert from "@/assets/certificates/be10x-ai-expert.jpg";
+import masaiDualCert from "@/assets/certificates/masai-dual-excellence.png";
 
 const Skills = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -36,6 +37,12 @@ const Skills = () => {
   ];
 
   const certifications = [
+    {
+      title: "Certificate of Dual Excellence - Product Management with Applied AI",
+      description: "iHUB DivyaSampark, IIT Roorkee in collaboration with Masai School",
+      certificateId: "AjAEMcP3zu",
+      image: masaiDualCert,
+    },
     {
       title: "Be10x AI Expert Certificate",
       description: "AI Tools and ChatGPT workshop - presentations, data analysis & coding with AI",
