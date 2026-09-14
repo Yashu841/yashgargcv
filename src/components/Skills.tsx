@@ -10,6 +10,8 @@ import yuvaAiCert from "@/assets/certificates/yuva-ai-india-mission.jpg";
 import icatCert from "@/assets/certificates/icat-participation.jpg";
 import be10xCert from "@/assets/certificates/be10x-ai-expert.jpg";
 import masaiDualCert from "@/assets/certificates/masai-dual-excellence.png";
+import forageProductMgmtCert from "@/assets/certificates/forage-product-management.jpg";
+import forageProjectMgrCert from "@/assets/certificates/forage-commercial-project-manager.jpg";
 
 const Skills = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -100,6 +102,18 @@ const Skills = () => {
       description: "AI Tools and ChatGPT workshop - presentations, data analysis & coding with AI",
       certificateId: "BE10X-2026",
       image: be10xCert,
+    },
+    {
+      title: "Forage Product Management Job Simulation",
+      description: "Understanding Product Performance and Planning a Stakeholder Presentation",
+      certificateId: "6aa7d2711206dac639b962a3",
+      image: forageProductMgmtCert,
+    },
+    {
+      title: "Certificate of Commercial Project Manager",
+      description: "Commercial Project Manager Job Simulation by Siemens on Forage",
+      certificateId: "6aa7ccfe1206dac639b85477",
+      image: forageProjectMgrCert,
     },
     {
       title: "Masaiverse - Coding with AI",
