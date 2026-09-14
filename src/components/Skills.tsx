@@ -107,13 +107,13 @@ const Skills = () => {
       title: "Forage Product Management Job Simulation",
       description: "Understanding Product Performance and Planning a Stakeholder Presentation",
       certificateId: "6aa7d2711206dac639b962a3",
-      image: forageProductMgmtCert.url,
+      image: forageProductMgmtCert,
     },
     {
       title: "Certificate of Commercial Project Manager",
       description: "Commercial Project Manager Job Simulation by Siemens on Forage",
       certificateId: "6aa7ccfe1206dac639b85477",
-      image: forageProjectMgrCert.url,
+      image: forageProjectMgrCert,
     },
     {
       title: "Masaiverse - Coding with AI",
