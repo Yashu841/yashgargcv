@@ -10,6 +10,8 @@ import yuvaAiCert from "@/assets/certificates/yuva-ai-india-mission.jpg";
 import icatCert from "@/assets/certificates/icat-participation.jpg";
 import be10xCert from "@/assets/certificates/be10x-ai-expert.jpg";
 import masaiDualCert from "@/assets/certificates/masai-dual-excellence.png";
+import forageProductMgmtCert from "@/assets/certificates/forage-product-management.jpg.asset.json";
+import forageProjectMgrCert from "@/assets/certificates/forage-commercial-project-manager.jpg.asset.json";
 
 const Skills = () => {
   const { ref, isVisible } = useScrollAnimation();
