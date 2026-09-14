@@ -112,6 +112,52 @@ const projects = [
     caseStudyLink: "",
     tags: ["HTML", "CSS", "JavaScript", "AI APIs"],
   },
+  {
+    title: "Forage Product Management Job Simulation",
+    description:
+      "Completed Forage Academy's Product Management Job Simulation. In the simulation I developed an understanding of key performance indicators and selected the most appropriate KPIs for assessing business questions related to a strategy RPG mobile game. I prioritized player insights for development, marketing, and senior leadership stakeholders, and created a detailed project plan that broke the development of a data-driven stakeholder presentation into clear, actionable steps.",
+    whyBuilt:
+      "I wanted to strengthen my product management fundamentals by working through real-world tasks around KPI selection, stakeholder communication, and project planning in a structured simulation environment.",
+    highlights: [
+      "Selected the most appropriate KPIs for assessing business questions",
+      "Prioritized player insights for development, marketing, and senior leadership stakeholders",
+      "Created a detailed project plan for a data-driven stakeholder presentation",
+      "Broke complex work into clear, actionable steps",
+    ],
+    demonstrates: [
+      "KPI selection and product performance analysis",
+      "Stakeholder prioritization and communication",
+      "Structured project planning",
+      "Data-driven presentation development",
+    ],
+    link: "",
+    prototypeLink: "",
+    caseStudyLink: "",
+    tags: ["Product Management", "KPIs", "Stakeholder Management", "Project Planning"],
+  },
+  {
+    title: "Commercial Project Manager Job Simulation",
+    description:
+      "Completed a job simulation as a Commercial Project Manager for a $100M+ light rail extension project. I analyzed project performance using Work Breakdown Structures (WBS) and Key Performance Indicators (KPIs) to identify risks and opportunities, calculated an Estimate at Completion (EAC) to forecast financial outcomes and evaluate cost performance, and delivered a professional stakeholder report summarizing findings, risks, and recommendations for leadership.",
+    whyBuilt:
+      "I wanted to build hands-on project management experience around large-scale commercial projects, financial forecasting, and stakeholder reporting.",
+    highlights: [
+      "Managed a $100M+ light rail extension project simulation",
+      "Analyzed project performance using WBS and KPIs",
+      "Calculated Estimate at Completion (EAC) for financial forecasting",
+      "Delivered a professional stakeholder report with risks and recommendations",
+    ],
+    demonstrates: [
+      "Project planning and KPI analysis",
+      "Financial forecasting and cost performance evaluation",
+      "Stakeholder communication and reporting",
+      "Risk identification and opportunity analysis",
+    ],
+    link: "",
+    prototypeLink: "",
+    caseStudyLink: "",
+    tags: ["Project Management", "KPI Analysis", "Financial Forecasting", "Stakeholder Communication"],
+  },
 ];
 
 const Projects = () => {
