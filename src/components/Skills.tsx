@@ -104,6 +104,18 @@ const Skills = () => {
       image: be10xCert,
     },
     {
+      title: "Forage Product Management Job Simulation",
+      description: "Understanding Product Performance and Planning a Stakeholder Presentation",
+      certificateId: "6aa7d2711206dac639b962a3",
+      image: forageProductMgmtCert.url,
+    },
+    {
+      title: "Certificate of Commercial Project Manager",
+      description: "Commercial Project Manager Job Simulation by Siemens on Forage",
+      certificateId: "6aa7ccfe1206dac639b85477",
+      image: forageProjectMgrCert.url,
+    },
+    {
       title: "Masaiverse - Coding with AI",
       description: "Participated in masterclass 'Coding with AI - From idea to product in minutes'",
       certificateId: "MASAIVERSE09012651",
