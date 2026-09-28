@@ -8,17 +8,27 @@ const Education = () => {
     {
       degree: "Product Management with Applied AI",
       institution: "IIT Roorkee (Managed by Masai)",
-      year: "Currently Enrolled",
-      score: "Ongoing",
+      year: "Completed September 2026",
+      score: "71.34%",
       icon: Award,
       highlight: true,
+      badge: "COMPLETED",
+    },
+    {
+      degree: "MBA (Master of Business Administration)",
+      institution: "Delhi University - School of Open Learning",
+      year: "2026 - Currently Enrolled",
+      score: "Ongoing",
+      icon: GraduationCap,
+      highlight: true,
+      badge: "NEW",
     },
     {
       degree: "Bachelors of Commerce (B.Com)",
       institution: "Delhi University - School of Open Learning",
       year: "2022 - 2025",
       score: "60%",
-      icon: GraduationCap,
+      icon: BookOpen,
       highlight: false,
     },
     {
@@ -26,7 +36,7 @@ const Education = () => {
       institution: "Dewan Public School",
       year: "2022",
       score: "73.4%",
-      icon: BookOpen,
+      icon: School,
       highlight: false,
     },
     {
@@ -62,7 +72,7 @@ const Education = () => {
         </div>
         
         <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {education.map((edu, index) => {
               const IconComponent = edu.icon;
               return (
@@ -77,10 +87,14 @@ const Education = () => {
                     animationDelay: `${index * 100}ms`,
                   }}
                 >
-                  {/* Highlight badge for current enrollment */}
-                  {edu.highlight && (
-                    <div className="absolute -top-1 -right-1 px-3 py-1 bg-primary text-primary-foreground text-xs font-bold rounded-bl-xl rounded-tr-xl">
-                      NEW
+                  {/* Status badge for highlighted cards */}
+                  {edu.badge && (
+                    <div className={`absolute -top-1 -right-1 px-3 py-1 text-xs font-bold rounded-bl-xl rounded-tr-xl
+                      ${edu.badge === 'NEW'
+                        ? 'bg-primary text-primary-foreground'
+                        : 'bg-card text-primary border border-primary/50'
+                      }`}>
+                      {edu.badge}
                     </div>
                   )}
                   
