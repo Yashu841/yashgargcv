@@ -39,19 +39,19 @@ const Hero = () => {
           </div>
 
           <p className="text-primary font-medium tracking-[0.3em] uppercase mb-4 text-sm">
-            ASPIRING PRODUCT MANAGER • ESPORTS VETERAN
+            ASPIRING PRODUCT MANAGER • FINANCE & INVESTMENT BANKING
           </p>
 
           <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold mb-4 tracking-tight">
             <span className="text-foreground">YASH</span>
             <br />
             <span className="text-gradient">GARG</span>
-            <span className="sr-only"> — Aspiring Product Manager &amp; Esports Veteran</span>
+            <span className="sr-only"> — Aspiring Product Manager</span>
           </h1>
 
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-6 leading-relaxed">
-            Aspiring product manager with a unique blend of analytical thinking and competitive esports
-            experience. Ready to bring strategic product excellence to your organization.
+            Aspiring product manager with strong analytical foundations in finance and
+            investment banking. Ready to bring strategic product excellence to your organization.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-6">

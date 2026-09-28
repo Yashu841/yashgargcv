@@ -36,34 +36,34 @@ const Experience = () => {
                 <div className="flex flex-wrap items-center gap-4 mb-4">
                   <div className="flex items-center gap-2 text-primary">
                     <Building2 size={18} />
-                    <span className="font-heading font-semibold text-lg">S8UL Esports</span>
+                    <span className="font-heading font-semibold text-lg">Forage</span>
                   </div>
                   <div className="flex items-center gap-2 text-muted-foreground text-sm">
                     <Calendar size={14} />
-                    <span>Dec 2022 - Dec 2023</span>
+                    <span>September 2026</span>
                   </div>
                 </div>
                 
                 <h3 className="font-heading text-2xl font-bold mb-4 text-foreground">
-                  Esports Athlete - PUBGM New State
+                  Investment Banking & Investment Management Job Simulations
                 </h3>
                 
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">▹</span>
-                    <span>Competed in numerous high-stakes tournaments under the S8UL Esports banner</span>
+                    <span>Completed J.P. Morgan Investment Banking and Fidelity International Investment Management job simulations</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">▹</span>
-                    <span>Achieved podium positions in multiple competitive tournaments</span>
+                    <span>Performed financial analysis, evaluated M&A targets, and delivered investment recommendations</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">▹</span>
-                    <span>Participated in 2 offline LAN events, demonstrating performance under pressure</span>
+                    <span>Optimized a managed investment portfolio and evaluated stock & fixed income opportunities through SWOT and relative valuation analysis</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">▹</span>
-                    <span>Developed strategic thinking, team coordination, and rapid decision-making skills</span>
+                    <span>Applied quantitative techniques like Sharpe Ratio and Excel's Solver for optimal asset allocation</span>
                   </li>
                 </ul>
               </div>
