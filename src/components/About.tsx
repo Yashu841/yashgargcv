@@ -1,4 +1,4 @@
-import { Briefcase, GraduationCap, Trophy } from "lucide-react";
+import { Briefcase, GraduationCap, TrendingUp } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const About = () => {
@@ -7,18 +7,18 @@ const About = () => {
   const highlights = [
     {
       icon: Briefcase,
-      title: "Professional Esports",
-      description: "1 year as S8UL Esports athlete competing in PUBGM tournaments",
+      title: "Product Management",
+      description: "Certified in Product Management with Applied AI by IIT Roorkee (2026)",
     },
     {
       icon: GraduationCap,
       title: "B.Com Graduate",
-      description: "Delhi University - School of Open Learning (2022-2025)",
+      description: "Delhi University - School of Open Learning (2022-2025), MBA currently enrolled",
     },
     {
-      icon: Trophy,
-      title: "Competitive Achievements",
-      description: "Podium finishes in multiple tournaments including 2 offline LAN events",
+      icon: TrendingUp,
+      title: "Finance & Investment",
+      description: "J.P. Morgan and Fidelity International job simulations in investment banking & management",
     },
   ];
 
@@ -38,21 +38,21 @@ const About = () => {
               About Me
             </p>
             <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
-              Where Gaming Meets
+              Where Strategy Meets
               <span className="text-gradient"> Product</span>
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 I'm a highly driven commerce graduate seeking opportunities in product 
                 management, with additional interests in finance and investment banking. 
-                My unique background combines analytical skills with the discipline and 
-                strategic thinking developed through professional esports.
+                My background combines analytical skills with the business acumen developed 
+                through hands-on product and finance training.
               </p>
               <p>
-                During my time at S8UL Esports, I competed at the highest level in PUBG 
-                Mobile New State tournaments, developing exceptional decision-making abilities 
-                under pressure and collaborative team skills that translate directly to the 
-                business world.
+                Through product management training at IIT Roorkee and investment banking and 
+                investment management simulations with J.P. Morgan and Fidelity International, 
+                I've developed exceptional analytical abilities, decision-making under pressure, 
+                and collaborative team skills that translate directly to the business world.
               </p>
               <p>
                 I bring strong communication skills, innovative problem-solving capabilities, 
@@ -66,7 +66,7 @@ const About = () => {
                 Interests
               </h3>
               <div className="flex flex-wrap gap-3">
-                {["Product Strategy", "Esports", "Investment Banking", "Finance", "Technology", "Gaming"].map((interest) => (
+                {["Product Strategy", "Investment Banking", "Finance", "FinTech", "Technology"].map((interest) => (
                   <span
                     key={interest}
                     className="px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/30 text-sm font-medium hover:bg-primary/20 transition-colors"
@@ -83,7 +83,7 @@ const About = () => {
                 Hobbies
               </h3>
               <div className="flex flex-wrap gap-3">
-                {["Watching Cricket", "Playing Esports", "Watching Esports"].map((hobby) => (
+                {["Watching Cricket"].map((hobby) => (
                   <span
                     key={hobby}
                     className="px-4 py-2 rounded-full bg-secondary text-foreground border border-border text-sm font-medium hover:border-primary/50 transition-colors"
