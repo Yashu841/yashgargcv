@@ -6,6 +6,7 @@ import { Eye } from "lucide-react";
 import masaiverseCert from "@/assets/certificates/masaiverse-coding-ai.jpg";
 import oracleCert from "@/assets/certificates/oracle-data-platform.jpg";
 import jpmorganCert from "@/assets/certificates/jpmorgan-investment-banking.jpg";
+import fidelityCert from "@/assets/certificates/fidelity-investment-management.jpg";
 import yuvaAiCert from "@/assets/certificates/yuva-ai-india-mission.jpg";
 import icatCert from "@/assets/certificates/icat-participation.jpg";
 import be10xCert from "@/assets/certificates/be10x-ai-expert.jpg";
@@ -134,6 +135,27 @@ const Skills = () => {
       image: jpmorganCert,
     },
     {
+      title: "Fidelity International Investment Management Job Simulation",
+      description: "Optimized a managed investment portfolio, evaluated stock & fixed income opportunities, and devised market-driven ideas",
+      certificateId: "6aba63f3276d98ecfb122b4f",
+      image: fidelityCert,
+      skills: [
+        "Client Communication",
+        "Commercial Awareness",
+        "Company Analysis",
+        "Critical Thinking",
+        "Excel",
+        "Financial Analysis",
+        "Fixed Income Analysis",
+        "Industry Analysis",
+        "Investment Management",
+        "Market Research",
+        "Portfolio Management",
+        "PowerPoint",
+        "Risk Analysis",
+      ],
+    },
+    {
       title: "Certification of YUVA AI FOR ALL - INDIA AI MISSION",
       description: "Hands-on approach to AI for real-world applications",
       certificateId: "231713-29841836-32914",
@@ -237,6 +259,15 @@ const Skills = () => {
                         onContextMenu={(e) => e.preventDefault()}
                       />
                     </div>
+                    {cert.skills && (
+                      <div className="flex flex-wrap gap-2 pt-3 flex-shrink-0">
+                        {cert.skills.map((skill) => (
+                          <span key={skill} className="px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/30 text-xs font-medium">
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                     <p className="text-center text-sm text-muted-foreground pt-3 flex-shrink-0">
                       Certificate ID: <span className="font-mono text-primary">{cert.certificateId}</span>
                     </p>
