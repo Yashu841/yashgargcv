@@ -8,7 +8,7 @@ const Education = () => {
     {
       degree: "Product Management with Applied AI",
       institution: "IIT Roorkee (Managed by Masai)",
-      year: "Completed September 2026",
+      year: "2025 - 2026 (Completed)",
       score: "71.34%",
       icon: Award,
       highlight: true,
