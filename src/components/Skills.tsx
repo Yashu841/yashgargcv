@@ -45,7 +45,7 @@ const Skills = () => {
       ],
     },
     {
-      name: "Technical & Data",
+      name: "Shared Analytics & Technical Skills",
       skills: [
         "SQL (Basics)",
         "Product Analytics",
@@ -56,7 +56,7 @@ const Skills = () => {
       ],
     },
     {
-      name: "Leadership & Collaboration",
+      name: "Shared Leadership & Collaboration",
       skills: [
         "Cross-Functional Leadership",
         "Stakeholder Management",
@@ -67,7 +67,19 @@ const Skills = () => {
       ],
     },
     {
-      name: "Domain",
+      name: "Finance & Banking",
+      skills: [
+        "Financial Analysis",
+        "Company Analysis",
+        "Investment Management",
+        "Fixed Income Analysis",
+        "Portfolio Management",
+        "Risk Analysis",
+        "Industry Analysis",
+      ],
+    },
+    {
+      name: "Product Domains",
       skills: [
         "FinTech",
         "Telecom",

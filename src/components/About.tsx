@@ -43,20 +43,18 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm a highly driven commerce graduate seeking opportunities in product 
-                management, with additional interests in finance and investment banking. 
-                My background combines analytical skills with the business acumen developed 
-                through hands-on product and finance training.
+                I'm a highly driven commerce graduate seeking opportunities in product
+                management. My training at IIT Roorkee focuses on product discovery,
+                user research, and building thoughtful product solutions.
               </p>
               <p>
-                Through product management training at IIT Roorkee and investment banking and 
-                investment management simulations with J.P. Morgan and Fidelity International, 
-                I've developed exceptional analytical abilities, decision-making under pressure, 
-                and collaborative team skills that translate directly to the business world.
+                Separately, I pursue interests in finance and investment banking through
+                J.P. Morgan and Fidelity International job simulations, covering financial
+                analysis, investment evaluation, and portfolio management.
               </p>
               <p>
-                I bring strong communication skills, innovative problem-solving capabilities, 
-                and an unwavering commitment to excellence in everything I do.
+                Across both fields, I bring analytical thinking, strong communication,
+                collaborative teamwork, and a commitment to thoughtful decision-making.
               </p>
             </div>
             
