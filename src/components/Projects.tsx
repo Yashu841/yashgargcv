@@ -6,20 +6,18 @@ const projects = [
   {
     featured: true,
     title: "Myntra SmartFit AI – Virtual Try-On & Smart Size Recommendation",
-    category: "AI Product Management • Generative AI • Recommendation System • No-Code AI • 3D Virtual Try-On",
+    category: "Product Management • Case-study prototype • Proposed MVP",
     description:
-      "Designed and built an AI-powered virtual try-on prototype for Myntra that creates a personalized digital mannequin using a user's body measurements and style preferences. The system recommends the best clothing size, visualizes how garments fit on different body types, and collects user feedback to continuously improve recommendation quality.",
+      "SmartFit AI is a case-study prototype, not a live production product. The proposed MVP combines measurement-to-size recommendation with a virtual mannequin / try-on. Recommended and alternative sizes, a confidence score, an explanation, and a 3D mannequin preview are intended prototype outputs, not verified fit advice.",
     whyBuilt:
-      "One of the biggest reasons for returns in fashion e-commerce is incorrect sizing. Users struggle to understand how clothes will fit based only on product images and size charts, leading to uncertainty, lower conversions, and higher return rates.",
+      "Secondary research reviewed public comments/reviews on Reddit, Google Play Store, YouTube, and Instagram. This informed the hypothesis that fit uncertainty affects shopper confidence; that hypothesis is unvalidated.",
     solution:
-      "SmartFit AI creates a personalized virtual mannequin using height, weight, gender, body type, and preferred fit. The AI recommends the most suitable clothing size, visualizes the selected outfit on a personalized avatar, explains the recommendation, and captures post-purchase feedback to improve future recommendations.",
+      "The proposed scope pairs measurement-based sizing guidance with a visual preview to explore fit uncertainty. This is a scope choice / hypothesis, not a proven solution. The linked PRD and validation plan are newly documented case-study artifacts, not historical decision records.",
     highlights: [
-      "AI-powered personalized size recommendations",
-      "Virtual try-on using a morphable 3D mannequin",
-      "Real-time body customization & outfit visualization",
-      "Confidence score with recommendation reasoning",
-      "Alternative size suggestions & user feedback loop",
-      "End-to-end AI recommendation pipeline",
+      "Intended: measurement-to-size recommendation",
+      "Intended: recommended and alternative sizes",
+      "Intended: confidence score and explanation",
+      "Intended: 3D mannequin / try-on preview",
     ],
     demonstrates: [
       "AI product design from problem to working prototype",
@@ -27,33 +25,19 @@ const projects = [
       "No-code automation with real backend integration",
       "Metrics, experimentation & GTM thinking",
     ],
-    techStack: [
-      { group: "Frontend", items: ["Lovable", "React", "TypeScript", "Tailwind CSS"] },
-      { group: "AI", items: ["OpenRouter API", "GPT-3.5 Turbo"] },
-      { group: "Automation", items: ["Make.com"] },
-      { group: "Database", items: ["Supabase"] },
-    ],
-    architecture: [
-      { icon: Sparkles, label: "User Input" },
-      { icon: Workflow, label: "Make.com Workflow" },
-      { icon: Cpu, label: "OpenRouter AI" },
-      { icon: Layers, label: "Recommendation Engine" },
-      { icon: Database, label: "Supabase Storage" },
-      { icon: Zap, label: "Virtual Try-On UI" },
-    ],
     outcomes: [
-      "Working end-to-end AI prototype",
-      "Automated recommendation workflow",
-      "Personalized size recommendation engine",
-      "Real-time feedback collection",
-      "AI-powered recommendation explanations",
-      "Integrated Supabase backend",
+      "More than 10 people tried the prototype",
+      "Detailed feedback is not currently documented",
+      "Measured outcomes are not currently documented",
+      "FCCL experiment proposed; not run, no results available",
     ],
-    status: "Completed Prototype",
+    status: "Case-study Prototype · Unvalidated",
     link: "https://smartfit-style-ai.lovable.app",
     prototypeLink: "https://smartfit-style-ai.lovable.app",
     caseStudyLink: "",
     ctaLabel: "Try Live Prototype",
+    artifactLink: "#smartfit-prd",
+    artifactLabel: "Read SmartFit PRD & artifacts",
     tags: [
       "Product Management",
       "AI Product Design",
@@ -91,26 +75,28 @@ const projects = [
     tags: ["Product Management", "UX Design", "System Thinking", "Prototyping"],
   },
   {
-    title: "AI Productify",
+    title: "AI Productify — AI-Assisted PRD & Product Roadmap Generator",
     description:
-      "A web app that helps users generate professional product descriptions, PRDs, and product ideas using AI in seconds. It turns simple inputs into clear, structured product content — helping founders, PMs, and creators move from idea to execution faster.",
+      "An AI-assisted product drafting project. View an illustrative PRD and roadmap sample with user stories, acceptance criteria, RICE / MoSCoW prioritization, and a phased roadmap. AI drafts were manually reviewed; no time-saving metric is available. The sample is not a saved historical output or a client project.",
     whyBuilt:
-      "Writing PRDs and product copy takes time and clarity. I wanted to build a tool that helps anyone — especially freshers and founders — think and write like a Product Manager.",
+      "Explore how AI can support structured product drafting while keeping assumptions, prioritization, and validation subject to human review. This does not establish measured productivity gains.",
     highlights: [
-      "Generates AI-written product descriptions and product ideas",
-      "Converts rough inputs into structured, readable outputs",
-      "Works instantly through a simple web interface",
+      "Illustrative generic input and PRD structure",
+      "User stories with testable acceptance criteria",
+      "RICE inputs marked unknown; MoSCoW scope choices",
+      "Roadmap without committed dates or measured results",
     ],
     demonstrates: [
-      "Apply AI to solve real product problems",
-      "Build and deploy full-stack web apps",
-      "Design clear, user-friendly product experiences",
-      "Turn product thinking into working software",
+      "Structured product drafting and manual review",
+      "Transparent assumptions and limitations",
+      "Proposed prioritization and validation planning",
     ],
     link: "https://ai-productify--Yashgarg1212.replit.app",
     prototypeLink: "",
     caseStudyLink: "",
     tags: ["HTML", "CSS", "JavaScript", "AI APIs"],
+    artifactLink: "#prd-generator-example",
+    artifactLabel: "Read illustrative PRD & roadmap",
   },
   {
     title: "Forage Product Management Job Simulation",
@@ -190,6 +176,16 @@ const Projects = () => {
           </h2>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8 flex flex-wrap items-center justify-between gap-4 border-l-2 border-primary pl-5">
+          <div>
+            <h3 className="font-heading text-xl font-semibold">Product Case Studies & Artifacts</h3>
+            <p className="text-muted-foreground text-sm mt-1">SmartFit PRD, journey, walkthrough, illustrative PRD sample, and proposed FCCL experiment.</p>
+          </div>
+          <Button asChild variant="outline" className="h-auto min-h-10 whitespace-normal py-2">
+            <a href="#product-artifacts"><FileText aria-hidden="true" /> Explore product artifacts</a>
+          </Button>
+        </div>
+
         <div className="max-w-4xl mx-auto grid gap-8">
           {projects.map((project: any) => (
             <div
@@ -247,7 +243,7 @@ const Projects = () => {
               {project.solution && (
                 <div className="mb-6 p-4 rounded-lg bg-primary/5 border border-primary/10">
                   <h4 className="text-sm font-semibold text-foreground mb-2 uppercase tracking-wide">
-                    Solution
+                     Proposed solution / scope hypothesis
                   </h4>
                   <p className="text-sm text-muted-foreground">{project.solution}</p>
                 </div>
@@ -256,7 +252,7 @@ const Projects = () => {
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">
-                    Key Features
+                    {project.featured ? "Prototype intent" : project.artifactLink ? "Illustrative artifact includes" : "Key Features"}
                   </h4>
                   <ul className="space-y-2">
                     {project.highlights.map((highlight, index) => (
@@ -273,7 +269,7 @@ const Projects = () => {
 
                 <div>
                   <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">
-                    {project.featured ? "Key Outcomes" : "What It Demonstrates"}
+                    {project.featured ? "Evidence & validation status" : "What It Demonstrates"}
                   </h4>
                   <ul className="space-y-2">
                     {(project.featured ? project.outcomes : project.demonstrates).map((item: string, index: number) => (
@@ -347,6 +343,14 @@ const Projects = () => {
 
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex flex-wrap gap-2">
+                  {project.artifactLink && (
+                    <Button variant="outline" size="sm" asChild className="h-auto min-h-9 whitespace-normal py-2">
+                      <a href={project.artifactLink}>
+                        <FileText className="mr-2 h-4 w-4" aria-hidden="true" />
+                        {project.artifactLabel}
+                      </a>
+                    </Button>
+                  )}
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
