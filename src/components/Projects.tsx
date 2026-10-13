@@ -1,4 +1,4 @@
-import { ExternalLink, Sparkles, FileText, Play, Zap, Cpu, Database, Workflow, Layers } from "lucide-react";
+import { ExternalLink, Sparkles, FileText, Play } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { Button } from "@/components/ui/button";
 
@@ -35,7 +35,7 @@ const projects = [
     link: "https://smartfit-style-ai.lovable.app",
     prototypeLink: "https://smartfit-style-ai.lovable.app",
     caseStudyLink: "",
-    ctaLabel: "Try Live Prototype",
+    ctaLabel: "Open Case-study Prototype",
     artifactLink: "#smartfit-prd",
     artifactLabel: "Read SmartFit PRD & artifacts",
     tags: [
