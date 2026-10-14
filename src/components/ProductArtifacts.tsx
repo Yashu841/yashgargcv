@@ -129,6 +129,11 @@ const ProductArtifacts = () => {
           <p className={labelClass}>04 · Illustrative sample artifact</p>
           <h3 id="generator-title" className={headingClass}>AI-Assisted PRD & Product Roadmap Generator</h3>
           <p className={`${bodyClass} mb-6`}>A representative input and generated-PRD structure, not a saved historical output or a client project. AI drafts were manually reviewed; no time-saving metric is available. The sample below is illustrative and does not establish the current app’s features.</p>
+          <Button asChild variant="outline" className="h-auto min-h-11 whitespace-normal py-2 mb-8">
+            <a href="https://gold-mine-for-p-ms--Yashgarg1212.replit.app" target={externalTarget} rel="noopener noreferrer">
+              Open AI-Assisted PRD Generator <ArrowUpRight aria-hidden="true" />
+            </a>
+          </Button>
           <div className="border-l-2 border-primary pl-5 mb-8">
             <h4 className="font-semibold mb-2">Generic example input</h4>
             <p className={bodyClass}>“Draft a PRD for a personal task planner. Target user: an individual tracking work tasks. Problem hypothesis: users may lose track of priorities. Proposed scope: create tasks, set due dates, and view upcoming work. Keep estimates and outcomes marked as unknown.”</p>
